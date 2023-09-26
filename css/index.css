@@ -1,0 +1,131 @@
+
+body{
+    background: #252424;
+    color: #DDDDDD;
+    font-family: 'Inclusive Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+header{
+    font-size: 1.2rem;
+    background-color: #1b1a1a;
+    color: #DDDDDD;
+    padding: 20px 15px;
+    display: flex;
+}
+.in{
+    justify-content: space-between;
+}
+.in p{
+    margin: 0;
+    padding: 0;
+}
+.in a{
+    text-decoration: none;
+    color: #DDDDDD;
+    transition: text-decoration 0.3s ease-in-out;
+}
+.in a:hover{
+    text-decoration: underline;
+}
+.out {
+    justify-content: flex-end;
+}
+nav{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 3px;
+    display: inline;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #DDDDDD;
+    transition: text-decoration 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 15px auto 50px auto;
+}
+
+.start-game {
+    font-size: 2rem;
+    margin: 10px auto;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-decoration: none;
+    display: block;
+    width: 30%;
+    height: 100px;
+
+}
+
+.start-game:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.ranks {
+    color: white;
+    margin: 10px auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 15%;
+    background-color: rgb(1, 99, 1);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.ranks:hover{
+    transform: scale(1.05);
+    background-color: green;
+}
+
+@media screen and (max-width: 768px) {
+    header{
+      font-size: 1.0rem;
+    }
+    h1 {
+      font-size: 1.6rem;
+      margin: 15px auto 35px auto
+    }
+    .start-game{
+        font-size: 1.4rem;
+        width: 55%;
+    }
+    .ranks{
+        font-size: 1.0rem;
+        width: 35%;
+    }
+  }

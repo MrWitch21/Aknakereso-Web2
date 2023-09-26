@@ -1,0 +1,66 @@
+body {
+    background: #252424;
+    color: #DDDDDD;
+    font-family: 'Inclusive Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+h1{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.67em auto;
+}
+.active{
+    text-decoration: underline;
+}
+
+
+form label {
+    font-size: 1.1rem;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    font-size: 1.0rem; 
+    width: 200px; 
+    padding: 5px; 
+    margin-bottom: 5px; 
+}
+
+
+.login{
+    height: 30px;
+    background-color: rgb(5, 255, 5);
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.1rem;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.login:hover{
+    transform: scale(1.05);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 1.6rem;
+    }
+    form input[type="email"],
+    form input[type="password"] {
+        font-size: 0.9rem;
+        width: 180px; 
+    }
+    .login{
+        font-size: 1rem;
+    }
+    form label{
+        font-size: 1rem;
+    }
+}

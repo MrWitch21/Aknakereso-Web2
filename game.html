@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aknakereső-játék</title>
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inclusive+Sans">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/gameBack.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="backToMain">
+            <a href="index.php">← Vissza a főképernyőre</a>
+        </div>
+    </header>
+    <h1>Aknakereső</h1>
+    <div id="hidden" class="hide">
+        <div id="scoreboard">
+            <div id="BombCounter" class="counter"></div>
+            <div id="timer" class="counter"></div>
+        </div>
+    </div>
+    <div id="menu" class="mn">
+        <div class="size">
+            <label for="mapSize">Válassz pályaméretet (6-14):</label>
+            <input type="number" id="mapSize" min="6" max="14" value="6">
+        </div>
+        <div class="select">
+            <label for="difficulty">Válassz nehézségi szintet:</label>
+            <select id="difficulty">
+                <option></option>
+                <option value="könnyű">Könnyű</option>
+                <option value="közepes">Közepes</option>
+                <option value="nehéz">Nehéz</option>
+            </select>
+        </div>
+        <button id="startButton">Játék indítása</button>
+    </div>
+    <table id=game class="hide"></table>
+    <div id="infoBox" class="info">
+        <p id="message" class="ms"></p>
+        <button id="newgame" class="new">Új játék</button>
+        <button id="backToMainPage" class="back">Vissza a főképernyőre</button>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>
